@@ -86,7 +86,10 @@ Searching for PII in dummy-pii/dummy-PAN-India.jpg
 ```
 
 A file named `output.txt` is created, containing output from the tool. This file is appended to sequentially in real-time.
-
+### NB: If you run into an issue saying: ImportError: libGL.so.1: cannot open shared object file: No such file or directory then run this command:
+```
+apt-get install ffmpeg libsm6 libxext6  -y
+```
 ## Working
 
 Octopii uses Tesseract for Optical Character Recognition (OCR) and NLTK for Natural Language Processing (NLP) to detect for strings of personal identifiable information. This is done via the following steps:
